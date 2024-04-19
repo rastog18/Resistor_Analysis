@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/r_blue"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:foreground="@drawable/blur_balckground"
+    android:id="@+id/relative">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="VIP APPs"
+        android:textColor="@color/r_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tan_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/tan_resistor"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tan_res"
+        android:layout_alignEnd="@+id/tan_res"
+        android:layout_alignTop="@+id/tan_res"
+        android:layout_marginTop="146dp">
+
+        <View
+            android:id="@+id/band1"
+            android:layout_width="8dp"
+            android:layout_height="68dp"
+            android:background="@drawable/band1"
+            android:layout_marginLeft="108dp" />
+        <View
+            android:id="@+id/band2"
+            android:layout_width="8dp"
+            android:layout_height="42dp"
+            android:background="@drawable/band2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="14dp"/>
+
+        <View
+            android:id="@+id/band3"
+            android:layout_width="8dp"
+            android:layout_height="42dp"
+            android:background="@drawable/band3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"/>
+        <View
+            android:id="@+id/band4"
+            android:layout_width="8dp"
+            android:layout_height="42dp"
+            android:background="@drawable/band4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"/>
+
+        <View
+            android:id="@+id/band5"
+            android:layout_width="8dp"
+            android:layout_height="68dp"
+            android:background="@drawable/band5"
+            android:layout_marginLeft="26dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/final_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tan_res"
+        android:layout_alignTop="@+id/tan_res"
+        android:layout_alignEnd="@+id/tan_res"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="100Ω  ±0.1%"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="350dp"
+        android:layout_alignStart="@+id/tan_res"
+        android:layout_alignEnd="@+id/tan_res"
+        android:layout_alignTop="@+id/tan_res"
+        android:id="@+id/btn_bar">
+        <Button
+            android:id="@+id/retake"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/circle"
+            android:textColor="@color/r_off_white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Retake"
+            android:textAllCaps="false"
+            android:tag="5"
+            android:onClick="TakeImage"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignStart="@+id/btn_bar"
+        android:layout_alignEnd="@+id/btn_bar"
+        android:layout_alignTop="@+id/btn_bar"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:text="Incorrect?"
+        android:shadowColor="@color/r_off_white"
+        android:textAllCaps="false"
+        android:textColor="@color/r_bg_gray"
+        android:background="@color/r_off_white"
+        android:onClick="TipsPopup"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Spinner
+        android:id="@+id/color1_spinner"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="305dp"
+
+        android:background="@drawable/spinner1" />
+
+    <Spinner
+        android:id="@+id/color2_spinner"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="77.5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="232.5dp"
+        android:background="@drawable/spinner2" />
+
+    <Spinner
+        android:id="@+id/color3_spinner"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="155dp"
+        android:background="@drawable/spinner3" />
+
+    <Spinner
+        android:id="@+id/color4_spinner"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="232.5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="77.5dp"
+        android:background="@drawable/spinner4" />
+
+    <Spinner
+        android:id="@+id/color5_spinner"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/spinner5" />
+
+    <TextView
+        android:id="@+id/text_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@color/r_bg_gray"
+        android:text="OFFLINE CALCULATOR"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_bar"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Band Numbers:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group"
+            android:checkedButton="@+id/radio_5">
+            <RadioButton android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="4"/>
+            <RadioButton android:id="@+id/radio_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="5"/>
+            <RadioButton android:id="@+id/radio_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="6"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>

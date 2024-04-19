@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/r_blue"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:foreground="@drawable/blur_balckground"
+    android:id="@+id/relative">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="VIP APPs"
+        android:textColor="@color/r_blue"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/camera"
+        android:layout_alignEnd="@+id/camera"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="0dp"
+        android:text="Resistor Analysis"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="99dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="42dp"
+        android:rotation="-28"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="3"
+        android:background="@drawable/circle"
+        android:text="Get Started"
+        android:textColor="@color/r_off_white"
+        android:textSize="30dp"
+        android:tag="-1"
+        android:onClick="TakeImage"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="-20dp"
+        android:rotation="-28"
+        android:src="@drawable/img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Band Numbers:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group"
+            android:checkedButton="@+id/radio_5">
+            <RadioButton android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="4"/>
+            <RadioButton android:id="@+id/radio_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="5"/>
+            <RadioButton android:id="@+id/radio_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="6"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/popupbkg"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:text="Place resistor horizontally behind contrasting background"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/r_purple"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/resistor_align" />
+
+        <Button
+            android:id="@+id/gotIt"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:text="Got It"
+            android:textColor="@color/r_off_white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>

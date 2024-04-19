@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/r_blue"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:foreground="@drawable/blur_balckground"
+    android:id="@+id/relative">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="VIP APPs"
+        android:textColor="@color/r_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:padding="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="135dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="3"
+        android:background="@drawable/circle"
+        android:onClick="Calculate"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/r_off_white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="135dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="3"
+        android:background="@drawable/circle"
+        android:tag="5"
+        android:onClick="TakeImage"
+        android:text="Retake"
+        android:textAllCaps="false"
+        android:textColor="@color/r_off_white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Band Numbers:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group"
+            android:checkedButton="@+id/radio_5">
+            <RadioButton android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="4"/>
+            <RadioButton android:id="@+id/radio_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="5"/>
+            <RadioButton android:id="@+id/radio_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/r_blue"
+                android:text="6"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

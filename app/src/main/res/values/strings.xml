@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">ResistorAnalysisApp</string>
+    <string-array name="color_array">
+        <item> </item>
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
+    <string-array name="color_array_no_percent">
+        <item> </item>
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="color_array_no_tolerance">
+        <item> </item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
+    <string-array name="color_array_temp">
+        <item> </item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Violet</item>
+    </string-array>
+    <string-array name="color_temp_hex">
+        <item> </item>
+        <item>#7B3F00</item>
+        <item>#FF0000</item>
+        <item>#FF7400</item>
+        <item>#FFF109</item>
+        <item>#00009e</item>
+        <item>#79009e</item>
+    </string-array>
+
+    <string-array name="color_tolerance_hex">
+        <item></item>
+        <item>#7B3F00</item>
+        <item>#FF0000</item>
+        <item>#008F00</item>
+        <item>#00009e</item>
+        <item>#79009e</item>
+        <item>#808080</item>
+        <item>#AE8625</item>
+        <item>#C9C9C9</item>
+    </string-array>
+
+    <string-array name="color_hex">
+        <item></item>
+        <item>#000000</item>
+        <item>#7B3F00</item>
+        <item>#FF0000</item>
+        <item>#FF7400</item>
+        <item>#FFF109</item>
+        <item>#008F00</item>
+        <item>#00009e</item>
+        <item>#79009e</item>
+        <item>#808080</item>
+        <item>#FFFFFF</item>
+        <item>#AE8625</item>
+        <item>#C9C9C9</item>
+    </string-array>
+
+</resources>
